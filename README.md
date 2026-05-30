@@ -11,7 +11,7 @@
 
 ## 📋 Deskripsi Proyek
 
-Proyek ini mensimulasikan sistem mesin sortir sampah otomatis berbasis kamera yang dipasang di tempat umum. Sistem menggunakan deep learning untuk mengklasifikasikan jenis sampah secara real-time ke dalam **5 kategori**:
+Proyek ini mensimulasikan sistem mesin sortir sampah otomatis. Sistem menggunakan deep learning untuk mengklasifikasikan jenis sampah secara real-time ke dalam **5 kategori**:
 
 | Kelas | Emoji | Contoh |
 |-------|-------|--------|
@@ -37,16 +37,15 @@ Proyek ini mensimulasikan sistem mesin sortir sampah otomatis berbasis kamera ya
 ---
 
 ## 🚀 Improvisasi Pengembangan
+Proyek ini mengimplementasikan:
 
-Dari daftar 15 improvisasi yang tersedia, proyek ini mengimplementasikan:
-
-### ✅ #5 — GradCAM Visualizer
+### GradCAM Visualizer
 Implementasi Gradient-weighted Class Activation Mapping dari scratch menggunakan PyTorch hooks. Menghasilkan heatmap overlay yang menunjukkan area gambar paling berpengaruh pada prediksi model, membantu interpretasi dan debugging model.
 
-### ✅ #12 — Mobile-optimized Classifier
+### Mobile-optimized Classifier
 Menggunakan MobileNetV3-Large yang dioptimasi untuk deployment ringan, dikombinasikan dengan export ke ONNX dan benchmark inference. Model ini cocok untuk di-deploy ke perangkat edge seperti Raspberry Pi atau smartphone.
 
-### ✅ #15 — Model Explainability Dashboard
+### Model Explainability Dashboard
 Menggabungkan Grad-CAM visualization, Confusion Matrix per kelas, Classification Report (Precision/Recall/F1), statistik distribusi prediksi, dan kurva training dalam satu notebook yang komprehensif.
 
 ---
@@ -153,26 +152,4 @@ Buka `sistem_sortir_sampah.ipynb` dan jalankan sel **secara berurutan dari atas 
 
 ---
 
-## 📝 Catatan Pengembangan
 
-### Tantangan & Solusi
-- **Class imbalance** → diatasi dengan `WeightedRandomSampler`
-- **Overfitting** → diatasi dengan augmentasi agresif + Dropout + Label Smoothing
-- **Training lambat** → diatasi dengan Mixed Precision FP16 + cuDNN benchmark
-
-### Potensi Pengembangan Lanjutan
-- Fine-tune dengan YOLOv8 untuk deteksi objek yang lebih akurat
-- Deploy ke Raspberry Pi menggunakan ONNX Runtime
-- Tambah kelas baru (e.g., baterai, elektronik)
-
----
-
-## 👤 Informasi Pengumpulan
-
-| | |
-|-|-|
-| **Nama** | [Nama Lengkap] |
-| **NIM** | [NIM] |
-| **Soal** | Soal 1 — Sistem Sortir Sampah Otomatis |
-| **Deadline** | 1 minggu setelah modul selesai |
-| **Format ZIP** | `NIM_Nama_Project01.zip` |
