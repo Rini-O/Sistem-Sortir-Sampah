@@ -105,7 +105,7 @@ sistem-sortir-sampah/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/USERNAME/sistem-sortir-sampah.git
+git clone (https://github.com/Rini-O/Sistem-Sortir-Sampah.git)
 cd sistem-sortir-sampah
 ```
 
